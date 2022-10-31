@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlPoint : MonoBehaviour
+public class Controlpoint : MonoBehaviour
 {
     float xRot, yRot = 0.0f;
 
@@ -23,7 +23,8 @@ public class ControlPoint : MonoBehaviour
         {
             xRot += Input.GetAxis("Mouse X") * rotspeed;
             yRot += Input.GetAxis("Mouse Y") * rotspeed;
-            if (yRot < -5f){
+            if (yRot < -5f)
+            {
                 yRot = -5f;
             }
             if (yRot > 5f)
@@ -40,8 +41,8 @@ public class ControlPoint : MonoBehaviour
             }
             transform.rotation = Quaternion.Euler(yRot, xRot, 0);
             line.gameObject.SetActive(true);
-            line.SetPosition(0,transform.position);
-            line.SetPosition(1, transform.position + transform.forward*4f);
+            line.SetPosition(0, transform.position);
+            line.SetPosition(1, transform.position + transform.forward * 4f);
         }
 
         if (Input.GetMouseButtonUp(0))
