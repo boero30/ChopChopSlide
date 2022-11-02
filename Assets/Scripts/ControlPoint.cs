@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Controlpoint : MonoBehaviour
 {
+    public bool jumped = false;
+
     float xRot, yRot = 0.0f;
 
     public Rigidbody veg;
@@ -13,6 +15,17 @@ public class Controlpoint : MonoBehaviour
     public float power = 30f;
 
     public LineRenderer line;
+
+    public Vector3 jump;
+
+    public float jumpForce = 1f;
+
+    //public bool isGrounded;
+
+    void Start()
+    {
+        jump = new Vector3(0.0f, jumpForce, 0.0f);    
+    }
 
     // Update is called once per frame
     void Update()
@@ -49,6 +62,11 @@ public class Controlpoint : MonoBehaviour
         {
             veg.velocity = transform.forward * power;
             line.gameObject.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            veg.AddForce(jump * jumpForce, ForceMode.Impulse);
+            jumped = true;
         }
     }
 }
