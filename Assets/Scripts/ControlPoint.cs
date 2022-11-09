@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controlpoint : MonoBehaviour
 {
@@ -8,11 +9,13 @@ public class Controlpoint : MonoBehaviour
 
     float xRot, yRot = 0.0f;
 
+    public bool newShoot = true;
+
     public Rigidbody veg;
 
     public float rotspeed = 5f;
 
-    public float power = 30f;
+    public float power;
 
     public LineRenderer line;
 
@@ -20,29 +23,34 @@ public class Controlpoint : MonoBehaviour
 
     public float jumpForce = 1f;
 
+    public PowerBar powerBar;
+
     //public bool isGrounded;
 
     void Start()
     {
-        jump = new Vector3(0.0f, jumpForce, 0.0f);    
+        jump = new Vector3(0.0f, jumpForce, 0.0f);
+
+        power = 0f;
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator Shoot()
     {
         transform.position = veg.position;
+
+        powerBar.force.value = powerBar.force.value;
 
         if (Input.GetMouseButton(0))
         {
             xRot += Input.GetAxis("Mouse X") * rotspeed;
             yRot += Input.GetAxis("Mouse Y") * rotspeed;
-            if (yRot < -5f)
+            if (yRot < -40f)
             {
-                yRot = -5f;
+                yRot = -40f;
             }
-            if (yRot > 5f)
+            if (yRot > 40f)
             {
-                yRot = 5f;
+                yRot = 40f;
             }
             if (xRot < -100f)
             {
@@ -56,6 +64,8 @@ public class Controlpoint : MonoBehaviour
             line.gameObject.SetActive(true);
             line.SetPosition(0, transform.position);
             line.SetPosition(1, transform.position + transform.forward * 4f);
+
+            powerBar.force.value = 0f;
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -64,9 +74,35 @@ public class Controlpoint : MonoBehaviour
             line.gameObject.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            veg.AddForce(jump * jumpForce, ForceMode.Impulse);
-            jumped = true;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (jumped == false)
+            {
+                jumpForce = 1f;
+                veg.AddForce(jump * jumpForce, ForceMode.Impulse);
+                jumped = true;
+            }else if (jumped == true)
+            {
+                jumpForce = 0f;
+                veg.AddForce(jump * jumpForce, ForceMode.Impulse);
+                jumped = false;
+            }
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            power = 0.2f;
+            veg.velocity = transform.forward * power;
+        }
+        yield return new WaitForSeconds(1);
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.S))
+        {
+            StartCoroutine(Shoot());
         }
     }
 }
