@@ -31,7 +31,9 @@ public class Controlpoint : MonoBehaviour
     {
         jump = new Vector3(0.0f, jumpForce, 0.0f);
 
-        power = 0f;
+        //power = 0f;
+
+        jumped = false;
     }
 
     private IEnumerator Shoot()
@@ -72,6 +74,7 @@ public class Controlpoint : MonoBehaviour
         {
             veg.velocity = transform.forward * power;
             line.gameObject.SetActive(false);
+            powerBar.force.value = 0f;
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -85,17 +88,19 @@ public class Controlpoint : MonoBehaviour
             {
                 jumpForce = 0f;
                 veg.AddForce(jump * jumpForce, ForceMode.Impulse);
-                jumped = false;
             }
 
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F)) //freeze
         {
             power = 0.2f;
             veg.velocity = transform.forward * power;
+
         }
         yield return new WaitForSeconds(1);
+
+        //powerBar.force.value = 0;
     }
 
     void Update()
@@ -103,6 +108,7 @@ public class Controlpoint : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             StartCoroutine(Shoot());
+            powerBar.force.value = 0f;
         }
     }
 }
