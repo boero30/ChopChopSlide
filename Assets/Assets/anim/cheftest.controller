@@ -10,8 +10,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -4435603690987197051}
-    m_Position: {x: 240, y: 80, z: 0}
+    m_State: {fileID: -8006956041667030183}
+    m_Position: {x: 240, y: 90, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -21,15 +21,15 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 260, y: 20, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -4435603690987197051}
---- !u!1102 &-4435603690987197051
+  m_DefaultState: {fileID: -8006956041667030183}
+--- !u!1102 &-8006956041667030183
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dicetest
+  m_Name: vent
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -42,8 +42,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: e7b8e541b9774fe4db3417d23c1f4a13,
-    type: 3}
+  m_Motion: {fileID: 7400000, guid: 5d2ad13290b8bff43ad5df0c3e5532dc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

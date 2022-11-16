@@ -10,7 +10,7 @@ public class PowerBar : MonoBehaviour
     public float lastvalue; 
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         force = GetComponent<Slider>();
         force.maxValue = 15f;
@@ -18,7 +18,7 @@ public class PowerBar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
 
         if (Input.GetMouseButton(2))

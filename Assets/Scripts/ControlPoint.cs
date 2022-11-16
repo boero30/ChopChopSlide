@@ -27,6 +27,11 @@ public class Controlpoint : MonoBehaviour
 
     //public bool isGrounded;
 
+    public bool IsMoving()
+    {
+        return veg.velocity.magnitude > 1f;
+    }
+
     void Start()
     {
         jump = new Vector3(0.0f, jumpForce, 0.0f);
@@ -36,7 +41,7 @@ public class Controlpoint : MonoBehaviour
         jumped = false;
     }
 
-    private IEnumerator Shoot()
+    public IEnumerator Shoot()
     {
         transform.position = veg.position;
 
@@ -73,7 +78,7 @@ public class Controlpoint : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             veg.velocity = transform.forward * power;
-            line.gameObject.SetActive(false);
+            //line.gameObject.SetActive(false);
             powerBar.force.value = 0f;
         }
 
@@ -103,7 +108,7 @@ public class Controlpoint : MonoBehaviour
         //powerBar.force.value = 0;
     }
 
-    void Update()
+    public void Update()
     {
         if (Input.GetKey(KeyCode.S))
         {
@@ -111,4 +116,7 @@ public class Controlpoint : MonoBehaviour
             powerBar.force.value = 0f;
         }
     }
+    
+
+
 }
