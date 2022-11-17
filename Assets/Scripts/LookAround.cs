@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 public class LookAround : MonoBehaviour
 {
-    float rotateX = 0f;
-    float rotateY = 0f;
+    public float speedHor = 3f;
+    public float speedVer = 3f;
 
-    public float sensitivity = 15f;
+    private float yaw = 0f;
+    private float pitch = 0f;
 
     void Update()
     {
-        rotateX += Input.GetAxis("Horizontal") * sensitivity;
-        rotateY += Input.GetAxis("Vertical") * -1 * sensitivity;
-        transform.localEulerAngles = new Vector3(rotateX, rotateY, 0);
+        //if (Input.GetMouseButton(1))
+        //{
+            yaw += speedHor * Input.GetAxis("Mouse X");
+            pitch -= speedVer * Input.GetAxis("Mouse Y");
+
+            transform.eulerAngles = new Vector3(pitch, yaw, 0f);
+        //}
     }
 }

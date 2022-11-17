@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Controlpoint : MonoBehaviour
 {
+    //public GameObject cinCam
+
     public bool jumped = false;
 
     float xRot, yRot = 0.0f;
@@ -15,17 +17,20 @@ public class Controlpoint : MonoBehaviour
 
     public float rotspeed = 5f;
 
-    public float power;
+    //CAMERA REF
+    public Transform cameraTransform;
+    private Vector3 moveDirection = Vector3.zero;
 
+    //GAMEOBJECTS REF
     public LineRenderer line;
 
     public Vector3 jump;
 
-    public float jumpForce = 1f;
+    public float jumpForce;
 
     public PowerBar powerBar;
 
-    //public bool isGrounded;
+    public float power;
 
     public bool IsMoving()
     {
@@ -36,60 +41,31 @@ public class Controlpoint : MonoBehaviour
     {
         jump = new Vector3(0.0f, jumpForce, 0.0f);
 
-        //power = 0f;
+        power = powerBar.force.value;
 
         jumped = false;
     }
 
     public IEnumerator Shoot()
     {
+
         transform.position = veg.position;
 
         powerBar.force.value = powerBar.force.value;
 
-        if (Input.GetMouseButton(0))
-        {
-            xRot += Input.GetAxis("Mouse X") * rotspeed;
-            yRot += Input.GetAxis("Mouse Y") * rotspeed;
-            if (yRot < -40f)
-            {
-                yRot = -40f;
-            }
-            if (yRot > 40f)
-            {
-                yRot = 40f;
-            }
-            if (xRot < -100f)
-            {
-                xRot = -100f;
-            }
-            if (xRot > 100)
-            {
-                xRot = 100f;
-            }
-            transform.rotation = Quaternion.Euler(yRot, xRot, 0);
-            line.gameObject.SetActive(true);
-            line.SetPosition(0, transform.position);
-            line.SetPosition(1, transform.position + transform.forward * 4f);
+        jumped = false;
 
-            powerBar.force.value = 0f;
-        }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetButtonDown("Jump"))
         {
-            veg.velocity = transform.forward * power;
-            //line.gameObject.SetActive(false);
-            powerBar.force.value = 0f;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+            Debug.Log("jumpyay");
             if (jumped == false)
             {
-                jumpForce = 1f;
+                //jumpForce = 1f;
                 veg.AddForce(jump * jumpForce, ForceMode.Impulse);
                 jumped = true;
-            }else if (jumped == true)
+            }
+            if (jumped == true)
             {
                 jumpForce = 0f;
                 veg.AddForce(jump * jumpForce, ForceMode.Impulse);
@@ -97,26 +73,36 @@ public class Controlpoint : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.F)) //freeze
+        if (Input.GetKeyDown(KeyCode.F))
         {
             power = 0.2f;
-            veg.velocity = transform.forward * power;
+            veg.velocity = transform.forward * 100;
 
         }
         yield return new WaitForSeconds(1);
 
-        //powerBar.force.value = 0;
     }
 
     public void Update()
     {
-        if (Input.GetKey(KeyCode.S))
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        moveDirection = cameraTransform.TransformDirection(moveDirection);
+        //moveDirection *= power;
+
+        if (Input.GetButton("Work"))
         {
+            //jumped = false;
             StartCoroutine(Shoot());
-            powerBar.force.value = 0f;
+            //powerBar.force.value = 0f;
+        }
+        
+        if (Input.GetButton("Shoot"))
+        {
+            veg.velocity = moveDirection * powerBar.force.value;
+            //Debug.Log(power);
+            Debug.Log(powerBar.force.value);
+            //powerBar.force.value = 0f;
         }
     }
-    
-
 
 }

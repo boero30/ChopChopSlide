@@ -7,7 +7,9 @@ public class PowerBar : MonoBehaviour
 {
     public Slider force;
     public Controlpoint control;
-    public float lastvalue; 
+    public float lastvalue;
+    public float power;
+
 
     // Start is called before the first frame update
     public void Start()
@@ -21,22 +23,21 @@ public class PowerBar : MonoBehaviour
     public void Update()
     {
 
-        if (Input.GetMouseButton(2))
+        if (Input.GetButton("Power"))
         {
             if(force.value < 15f)
             {
-                force.value = force.value + 0.5f;
+                force.value = force.value + 0.1f;
             }else
             {
                 force.value = 15f;
             }  
         }
 
-        if (Input.GetMouseButtonUp(2))
+        if (Input.GetButtonUp("Power"))
         {
             control.power = force.value;
             Debug.Log(force.value);
-            lastvalue = force.value;
         }
 
         /*if (Input.GetKeyDown(KeyCode.S))
