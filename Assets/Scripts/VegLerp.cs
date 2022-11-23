@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class VegLerp : MonoBehaviour
 {
-    public Transform[] target;
-    public float speedjump;
-
-    private int current;
-
-    private void Update()
+    public float CleanCount;
+    public void OnTriggerEnter(Collider other)
     {
-        if(transform.position != target[current].position)
+        if(other.gameObject.tag == "water")
         {
-            Vector3 pos = Vector3.MoveTowards(transform.position, target[current].position, speedjump);
-            GetComponent<Rigidbody>().MovePosition(pos);
-        }else current = (current + 1) % target.Length;
+            Destroy(other.gameObject);
+            Debug.Log("aaaa");
+            //CleanCount;
+        }
     }
 }

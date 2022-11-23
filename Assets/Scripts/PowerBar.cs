@@ -15,7 +15,7 @@ public class PowerBar : MonoBehaviour
     public void Start()
     {
         force = GetComponent<Slider>();
-        force.maxValue = 15f;
+        force.maxValue = 8f;
         force.value = 0f;
     }
 
@@ -25,24 +25,25 @@ public class PowerBar : MonoBehaviour
 
         if (Input.GetButton("Power"))
         {
-            if(force.value < 15f)
+            if (force.value < 8f)
             {
-                force.value = force.value + 0.1f;
-            }else
+                force.value = force.value + 0.01f;
+            } else
             {
-                force.value = 15f;
-            }  
+                force.value = 8f;
+            }
         }
 
         if (Input.GetButtonUp("Power"))
         {
-            control.power = force.value;
+            force.value = force.value;
             Debug.Log(force.value);
         }
-
-        /*if (Input.GetKeyDown(KeyCode.S))
-        {
-            force.value = force.value;
-        }*/
     }
+
+    public void Reset()
+    {
+        force.value = 0f;
+    }
+
 }

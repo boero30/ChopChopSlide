@@ -5,21 +5,17 @@ using UnityEngine.UI;
 
 public class Controlpoint : MonoBehaviour
 {
-    //public GameObject cinCam
-
-    public bool jumped = false;
-
-    float xRot, yRot = 0.0f;
-
-    public bool newShoot = true;
+    //public GameObject cinCa
 
     public Rigidbody veg;
 
-    public float rotspeed = 5f;
+    //public GameObject veggie;
 
     //CAMERA REF
     public Transform cameraTransform;
-    private Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
+
+    public Vector3 jumpdir;
 
     //GAMEOBJECTS REF
     public LineRenderer line;
@@ -30,79 +26,71 @@ public class Controlpoint : MonoBehaviour
 
     public PowerBar powerBar;
 
-    public float power;
+    bool InTransit = false;
 
+    public bool lose = false;
+
+    public float score;
     public bool IsMoving()
     {
         return veg.velocity.magnitude > 1f;
     }
 
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        jump = new Vector3(0.0f, jumpForce, 0.0f);
-
-        power = powerBar.force.value;
-
-        jumped = false;
+        if (other.gameObject.tag == "jello")
+        {
+            Debug.Log("jellooo:))");
+        } if (other.gameObject.tag == "lose")
+        {
+            lose = true;
+            Debug.Log("lose");
+        } if (other.gameObject.tag == "block")
+        {
+            Debug.Log("block");
+        }
     }
 
-    public IEnumerator Shoot()
+    void Start()
     {
+        jump = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
 
-        transform.position = veg.position;
+        jumpdir = new Vector3(moveDirection.x, 0.5f, moveDirection.z );
 
-        powerBar.force.value = powerBar.force.value;
+    }
 
-        jumped = false;
+    public IEnumerator Disparo()
+    {
+        //line.gameObject.SetActive(false);
+        //InTransit = true;
+        veg.velocity = moveDirection * powerBar.force.value;
+        yield return new WaitForSeconds(3);
 
+        powerBar.Reset();
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            Debug.Log("jumpyay");
-            if (jumped == false)
-            {
-                //jumpForce = 1f;
-                veg.AddForce(jump * jumpForce, ForceMode.Impulse);
-                jumped = true;
-            }
-            if (jumped == true)
-            {
-                jumpForce = 0f;
-                veg.AddForce(jump * jumpForce, ForceMode.Impulse);
-            }
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            power = 0.2f;
-            veg.velocity = transform.forward * 100;
-
-        }
-        yield return new WaitForSeconds(1);
-
+        yield return null;
     }
 
     public void Update()
     {
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        moveDirection = cameraTransform.TransformDirection(moveDirection);
-        //moveDirection *= power;
+        //line.gameObject.SetActive(true);
+        //line.SetPosition(0, veg.transform.position);
+        //line.SetPosition(1, veg.transform.position + moveDirection * 500f);
 
-        if (Input.GetButton("Work"))
+        if (Input.GetKey(KeyCode.A))
         {
-            //jumped = false;
-            StartCoroutine(Shoot());
-            //powerBar.force.value = 0f;
+            veg.AddForce(jumpdir * jumpForce, ForceMode.Impulse);
         }
-        
+
+        moveDirection = cameraTransform.forward;
+
         if (Input.GetButton("Shoot"))
-        {
-            veg.velocity = moveDirection * powerBar.force.value;
-            //Debug.Log(power);
-            Debug.Log(powerBar.force.value);
-            //powerBar.force.value = 0f;
+        {           
+            if(InTransit == false)
+            {
+                StartCoroutine(Disparo());
+                Debug.Log("yaAlavergaaaa");
+            }
         }
     }
-
 }

@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
 
     public bool timeout = false;
 
+    public Controlpoint cp;
     private void Update()
     {
         if (timeValue > 0)
@@ -24,6 +25,11 @@ public class Timer : MonoBehaviour
         }
 
         DisplayTime(timeValue);
+
+        /*if(cp.lose == true)
+        {
+            timeValue -= 0;
+        }*/
     }
     public void Lose()
     {
@@ -53,6 +59,7 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         text.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        //time.text = timer.timeValue.ToString();
     }
 }
 
