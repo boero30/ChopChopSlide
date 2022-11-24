@@ -7,6 +7,8 @@ enum Chefstates { Cutting, Inspecting }
 
 public class ChefAI : MonoBehaviour
 {
+    private Animator animator;
+
     [SerializeField] private float startInspectionTime = 5f;
 
     [SerializeField] private AudioSource _cutfast;
@@ -26,6 +28,8 @@ public class ChefAI : MonoBehaviour
     void Start()
     {
         veggie = FindObjectOfType<Controlpoint>();
+
+        animator = GetComponent<Animator>();
 
         currentInspectionTime = startInspectionTime;        
 
@@ -70,6 +74,8 @@ public class ChefAI : MonoBehaviour
     {
         if (!_cutfast.isPlaying)
         {
+            animator.SetTrigger("Look");
+
             currentState = Chefstates.Inspecting;
 
             redlight.SetActive(false);
