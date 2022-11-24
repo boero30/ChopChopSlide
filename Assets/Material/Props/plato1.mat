@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-249546735965406471
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 12
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: plato1
+  m_Shader: {fileID: -6465566751694194690, guid: 63e707d1f32c745f594cdd375bf25728,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2225
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_1888ac94315e47089d4ccad6bd4b7fad:
+        m_Texture: {fileID: 2800000, guid: db4b315843defb34f822f9aa7082183c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_29320d3028094bebbbdb4b46ab49fd26:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_796fa842e7a64945b3e1eed8602e64b1:
+        m_Texture: {fileID: 2800000, guid: 8441062a02c7e1e408450017a7cd2ec1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_b8eb406bd5b64723a2e7f9f3361e854d:
+        m_Texture: {fileID: 2800000, guid: 543099beb97ab1f49855b325acdc3b8d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Boolean_5c0e213cddb94e9280063113cfdf62dd: 0
+    - Boolean_93b38fdf5dd34686980e7ca8311d7034: 0
+    - Boolean_cef2de69ecc543c997694789a165e96d: 0
+    - Boolean_da7526205baf4355abbd1c1cd262a44f: 0
+    - Boolean_e88cae22686740cbb870af996f753498: 0
+    - Vector1_1: 1
+    - Vector1_37cef397dd87499ab4874980015d9e47: 0
+    - Vector1_5a10342535474d539cb8ca90a93c3dae: 0
+    - Vector1_86e844af569241b4b265c69ac47a53cc: 0
+    - Vector1_92b82806a8024a48be3b1e33a30e328b: 2
+    - Vector1_9631c713374944f1baf4c3cdfd2383f2: 1
+    - Vector1_bc92b98c079646cbb865d6e90b4a6695: 0
+    - Vector1_c08ab4a83caa42759f4ee644717f3898: 0
+    - Vector1_cc65e7fb5d3e424e9d494e6dc85bbe1b: 1
+    - Vector1_cec3ea62b71c4cd89a9781c0e5893529: 0
+    - Vector1_d2040b37f4b647f69e4b4cefd3924402: 0
+    - Vector1_d2040b37f4b647f69e4b4cefd3924402_1: 0
+    - Vector1_fa1cbfcacbf2417480c966913c6b923d: 1
+    - Vector1_fa1cbfcacbf2417480c966913c6b923d_1: 0
+    - _AddPrecomputedVelocity: 0
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _AlphaToMask: 0
+    - _AlphaToMaskInspectorValue: 0
+    - _BlendMode: 0
+    - _Color_Blend_Intensity: 0
+    - _ConservativeDepthOffsetEnable: 0
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _DepthOffsetEnable: 0
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedGIMode: 0
+    - _DoubleSidedNormalMode: 2
+    - _DstBlend: 0
+    - _EnableBlendModePreserveSpecularLighting: 1
+    - _EnableFogOnTransparent: 1
+    - _OpaqueCullMode: 2
+    - _RayTracing: 0
+    - _ReceivesSSR: 1
+    - _ReceivesSSRTransparent: 0
+    - _RefractionModel: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
+    - _SupportDecals: 1
+    - _SurfaceType: 0
+    - _Tiene_Textura: 1
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentDepthPostpassEnable: 0
+    - _TransparentDepthPrepassEnable: 0
+    - _TransparentSortPriority: 0
+    - _TransparentWritingMotionVec: 0
+    - _TransparentZWrite: 0
+    - _UseShadowThreshold: 0
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    m_Colors:
+    - Color_c80e8fd258284d2fb97d43a4b4d889d8: {r: 0.32440367, g: 0.6529599, b: 0.8490566,
+        a: 0}
+    - Vector2_1af848e0ea36472fa86e86dd6c8ef153: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_5487288124734aa6899cc9b509e7bced: {r: 0, g: 0, b: 0, a: 0}
+    - _Color_Darken: {r: 1, g: 0.9358849, b: 0.22169808, a: 0}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
