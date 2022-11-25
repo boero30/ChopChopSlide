@@ -81,6 +81,7 @@ Material:
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
     - _BlendMode: 0
+    - _Brillos: 0.04
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -91,9 +92,13 @@ Material:
     - _DstBlend: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
-    - _LineasDensidad: 5
-    - _LineasGrosor: 9
+    - _Fresnel_Power: 6
+    - _Intensidad_Olas: 1
+    - _LineasDensidad: 2.87
+    - _LineasGrosor: 2.52
     - _LineasVelocidad: 1
+    - _N_Olas: 3
+    - _Noise_Scale: 20
     - _OpaqueCullMode: 2
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -103,6 +108,8 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
+    - _Scale: 2.81
+    - _Scroll_Speed: 0.01
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -116,6 +123,9 @@ Material:
     - _StencilWriteMaskMV: 40
     - _SupportDecals: 1
     - _SurfaceType: 0
+    - _Tiling: 0.03
+    - _TilingV: 0
+    - _Tiling_1: 3
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
@@ -124,14 +134,17 @@ Material:
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
-    - _VelocidadOla: 0.1
+    - _VelocidadOla: 0.15
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
+    - _sacel: 2
     m_Colors:
-    - _BaseColor: {r: 0.3504361, g: 0.7191584, b: 0.990566, a: 0}
+    - _BaseColor: {r: 0.350436, g: 0.7191584, b: 0.99056596, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Inner_Color: {r: 0.8632076, g: 1, b: 0.9752694, a: 0}
     - _LineasColor: {r: 0.90363616, g: 1.2712487, b: 1.6098392, a: 0}
+    - _OuterColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
