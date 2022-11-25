@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16903305, g: 0.12655401, b: 0.10017687, a: 1}
+  m_IndirectSpecularColor: {r: 0.16517842, g: 0.119827986, b: 0.09119761, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -430,6 +430,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapOlla (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: adaeb8375c229f943be6d3049ca8ba19,
+        type: 3}
+      propertyPath: m_TagString
+      value: boil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: adaeb8375c229f943be6d3049ca8ba19, type: 3}
@@ -453,10 +458,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61990937}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2700377219336543271, guid: adaeb8375c229f943be6d3049ca8ba19, type: 3}
 --- !u!1 &65373220 stripped
@@ -1277,6 +1282,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapSarten2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d06e277e613cde4d9537ccddc2c731c,
+        type: 3}
+      propertyPath: m_TagString
+      value: fry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
@@ -1300,10 +1310,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182910599}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -80700132671814071, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
 --- !u!1001 &207601678
@@ -1667,6 +1677,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapCuchillo_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 17586bfdf00cc9444adc3a2a0b9941e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: knife
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 17586bfdf00cc9444adc3a2a0b9941e1, type: 3}
@@ -1676,6 +1691,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 235106249}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &235106251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 17586bfdf00cc9444adc3a2a0b9941e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 235106249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &235106252
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235106251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6662399617660185785, guid: 17586bfdf00cc9444adc3a2a0b9941e1, type: 3}
 --- !u!1 &247781377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f34ce1f976687d74ba1ce2cb5aa27881,
@@ -2024,7 +2059,7 @@ MonoBehaviour:
   line: {fileID: 2136003470}
   jump: {x: 0, y: 0, z: 0}
   jumpForce: 2
-  powerBar: {fileID: 0}
+  powerBar: {fileID: 826230369}
   lose: 0
   score: 0
   avo: 0
@@ -3057,6 +3092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapSarten2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d06e277e613cde4d9537ccddc2c731c,
+        type: 3}
+      propertyPath: m_TagString
+      value: fry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
@@ -3080,10 +3120,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410051691}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -80700132671814071, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
 --- !u!1 &420426471 stripped
@@ -4375,6 +4415,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapCuchillo_3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d16d277ae6be5c4b84e6a0012ad2d11,
+        type: 3}
+      propertyPath: m_TagString
+      value: knife
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d16d277ae6be5c4b84e6a0012ad2d11, type: 3}
@@ -4408,10 +4453,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724279279}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8021359062478857520, guid: 4d16d277ae6be5c4b84e6a0012ad2d11, type: 3}
 --- !u!4 &724279282 stripped
@@ -7555,6 +7600,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapOlla (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: adaeb8375c229f943be6d3049ca8ba19,
+        type: 3}
+      propertyPath: m_TagString
+      value: boil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: adaeb8375c229f943be6d3049ca8ba19, type: 3}
@@ -7578,10 +7628,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114432752}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2700377219336543271, guid: adaeb8375c229f943be6d3049ca8ba19, type: 3}
 --- !u!1001 &1115278526
@@ -7672,6 +7722,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapSarten2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d06e277e613cde4d9537ccddc2c731c,
+        type: 3}
+      propertyPath: m_TagString
+      value: fry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
@@ -7695,10 +7750,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115278528}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -80700132671814071, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
 --- !u!1001 &1157684741
@@ -11587,7 +11642,7 @@ GameObject:
   - component: {fileID: 1726369591}
   m_Layer: 0
   m_Name: Cuchillo_4
-  m_TagString: Untagged
+  m_TagString: knife
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11681,10 +11736,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726369587}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6018279212601684424, guid: 27124a6661caf0847bcc6c048245cbf6, type: 3}
 --- !u!1 &1744582645 stripped
@@ -12131,6 +12186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1792586c642da499c87481f12d88be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlpoint: {fileID: 285875811}
   startInspectionTime: 5
   _cutfast: {fileID: 1305554247}
   greenlight: {fileID: 0}
@@ -13408,7 +13464,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005379846}
-  m_LocalRotation: {x: 0.17427719, y: 0.6906636, z: -0.17724082, w: 0.67911494}
+  m_LocalRotation: {x: 0.17427714, y: 0.6906635, z: -0.1772408, w: 0.679115}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13814,6 +13870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _UVs_LightmapSarten2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d06e277e613cde4d9537ccddc2c731c,
+        type: 3}
+      propertyPath: m_TagString
+      value: fry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
@@ -13837,10 +13898,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070730060}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -80700132671814071, guid: 7d06e277e613cde4d9537ccddc2c731c, type: 3}
 --- !u!1001 &2075438501

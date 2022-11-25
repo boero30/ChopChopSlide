@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Controlpoint : MonoBehaviour
 {
@@ -51,16 +52,77 @@ public class Controlpoint : MonoBehaviour
     {
         if (other.gameObject.tag == "jello")
         {
-            Debug.Log("jellooo:))");
+            SceneManager.LoadScene(12);
         }
-        if (other.gameObject.tag == "lose")
+        if (other.gameObject.tag == "knife")
         {
             lose = true;
-            Debug.Log("lose");
+            if(tomato == true)
+            {
+                SceneManager.LoadScene(26);
+            }
+            else if (onion == true)
+            {
+                SceneManager.LoadScene(23);
+            }
+            else if (egg == true)
+            {
+                SceneManager.LoadScene(20);
+            }
+            else if (avo == true)
+            {
+                SceneManager.LoadScene(14);
+            }
+            else if (carrot == true)
+            {
+                SceneManager.LoadScene(18);
+            }
         }
-        if (other.gameObject.tag == "block")
+        if (other.gameObject.tag == "fry")
         {
-            Debug.Log("block");
+            if (tomato == true)
+            {
+                SceneManager.LoadScene(27);
+            }
+            else if (onion == true)
+            {
+                SceneManager.LoadScene(24);
+            }
+            else if (egg == true)
+            {
+                SceneManager.LoadScene(21);
+            }
+            else if (avo == true)
+            {
+                SceneManager.LoadScene(15);
+            }
+            else if (carrot == true)
+            {
+                SceneManager.LoadScene(17);
+            }
+        }
+        if (other.gameObject.tag == "boil")
+        {
+            if (tomato == true)
+            {
+                SceneManager.LoadScene(25);
+            }
+            else if (onion == true)
+            {
+                SceneManager.LoadScene(22);
+            }
+            else if (egg == true)
+            {
+                SceneManager.LoadScene(19);
+            }
+            else if (avo == true)
+            {
+                SceneManager.LoadScene(15);
+            }
+            else if (carrot == true)
+            {
+                SceneManager.LoadScene(17);
+            }
         }
     }
 

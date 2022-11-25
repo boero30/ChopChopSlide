@@ -60,4 +60,66 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(12);
     }
+    public void avoboil()
+    {
+        SceneManager.LoadScene(13);
+    }
+
+    public void avocut()
+    {
+        SceneManager.LoadScene(14);
+    }
+
+    public void avofry()
+    {
+        SceneManager.LoadScene(15);
+    }
+    public void carrotboil()
+    {
+        SceneManager.LoadScene(16);
+    }
+    public void carrotfry()
+    {
+        SceneManager.LoadScene(17);
+    }
+    public void carrotcut()
+    {
+        SceneManager.LoadScene(18);
+    }
+    public void eggboil()
+    {
+        SceneManager.LoadScene(19);
+    }
+    public void eggcut()
+    {
+        SceneManager.LoadScene(20);
+    }
+    public void eggfry()
+    {
+        SceneManager.LoadScene(21);
+    }
+    public void onionboil()
+    {
+        SceneManager.LoadScene(22);
+    }
+    public void onioncut()
+    {
+        SceneManager.LoadScene(23);
+    }
+    public void onionfry()
+    {
+        SceneManager.LoadScene(24);
+    }
+    public void tomatoboil()
+    {
+        SceneManager.LoadScene(25);
+    }
+    public void tomatocut()
+    {
+        SceneManager.LoadScene(26);
+    }
+    public void tomatofry()
+    {
+        SceneManager.LoadScene(27);
+    }
 }

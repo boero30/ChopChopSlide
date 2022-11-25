@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 enum Chefstates { Cutting, Inspecting }
 
 public class ChefAI : MonoBehaviour
 {
+    public Controlpoint controlpoint;
+
     private Animator animator;
 
     [SerializeField] private float startInspectionTime = 5f;
@@ -81,13 +84,30 @@ public class ChefAI : MonoBehaviour
 
             if (veggie.IsMoving())
             {
-                Debug.Log("loseeee");
+                if (controlpoint.tomato == true)
+                {
+                    SceneManager.LoadScene(26);
+                }
+                else if (controlpoint.onion == true)
+                {
+                    SceneManager.LoadScene(23);
+                }
+                else if (controlpoint.egg == true)
+                {
+                    SceneManager.LoadScene(20);
+                }
+                else if (controlpoint.avo == true)
+                {
+                    SceneManager.LoadScene(13);
+                }
+                else if (controlpoint.carrot == true)
+                {
+                    SceneManager.LoadScene(16);
+                }
             }
 
-            //StartCoroutine(TrafficLights());
             greenlight.SetActive(false);
             redlight.SetActive(true);
-            //StopAllCoroutines();
         }
         else
         {
