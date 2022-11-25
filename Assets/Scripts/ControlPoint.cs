@@ -7,6 +7,8 @@ public class Controlpoint : MonoBehaviour
 {
     //public GameObject cinCa
 
+    public Suciedad dirty;
+
     public Rigidbody veg;
 
     //public GameObject veggie;
@@ -31,6 +33,9 @@ public class Controlpoint : MonoBehaviour
     public bool lose = false;
 
     public float score;
+
+    public int throws;
+
     public bool IsMoving()
     {
         return veg.velocity.magnitude > 1f;
@@ -53,6 +58,8 @@ public class Controlpoint : MonoBehaviour
 
     void Start()
     {
+        throws = 0;
+
         jump = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
 
         jumpdir = new Vector3(moveDirection.x, 0.5f, moveDirection.z );
@@ -65,9 +72,10 @@ public class Controlpoint : MonoBehaviour
         //InTransit = true;
         veg.velocity = moveDirection * powerBar.force.value;
         yield return new WaitForSeconds(3);
-
         powerBar.Reset();
-
+        /*dirty.min += 0.1f;
+        dirty.MAT.SetFloat("_Opacity_Dirt", dirty.min / dirty.max);
+        Debug.Log(dirty.min);*/
         yield return null;
     }
 
@@ -85,11 +93,10 @@ public class Controlpoint : MonoBehaviour
         moveDirection = cameraTransform.forward;
 
         if (Input.GetButton("Shoot"))
-        {           
-            if(InTransit == false)
+        {
+            if (InTransit == false)
             {
                 StartCoroutine(Disparo());
-                Debug.Log("yaAlavergaaaa");
             }
         }
     }
