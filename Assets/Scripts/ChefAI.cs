@@ -46,16 +46,6 @@ public class ChefAI : MonoBehaviour
             StateMachine();
         }
     }
-
-    public IEnumerator TrafficLights()
-    {
-        greenlight.SetActive(false);
-        yellowlight.SetActive(true);
-        yield return new WaitForSeconds(1);
-        yellowlight.SetActive(false);
-        redlight.SetActive(true);
-        yield return null;
-    }
     private void StateMachine()
     {
         switch (currentState)
