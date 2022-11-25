@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: ece68d1ff515df3489469c5a063be1e2
+<<<<<<<< HEAD:Assets/Scenes/Suciedad.unity.meta
+guid: 8012b1eb42ba1df479c099cc02ff672d
+========
+guid: 05fca1a3861a12843b41dded84dd7c86
+>>>>>>>> a73f5494e9e75b8b045cf473c0cc48143e196426:Assets/Scenes/level1.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
