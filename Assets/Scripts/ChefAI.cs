@@ -54,6 +54,7 @@ public class ChefAI : MonoBehaviour
         yield return new WaitForSeconds(1);
         yellowlight.SetActive(false);
         redlight.SetActive(true);
+        yield return null;
     }
     private void StateMachine()
     {
@@ -93,8 +94,9 @@ public class ChefAI : MonoBehaviour
                 Debug.Log("loseeee");
             }
 
-            StartCoroutine(TrafficLights());
-
+            //StartCoroutine(TrafficLights());
+            greenlight.SetActive(false);
+            redlight.SetActive(true);
             //StopAllCoroutines();
         }
         else
