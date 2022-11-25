@@ -70,16 +70,16 @@ Material:
     - Vector1_37cef397dd87499ab4874980015d9e47: 0
     - Vector1_5a10342535474d539cb8ca90a93c3dae: 0
     - Vector1_86e844af569241b4b265c69ac47a53cc: 0
-    - Vector1_92b82806a8024a48be3b1e33a30e328b: 2
+    - Vector1_92b82806a8024a48be3b1e33a30e328b: 0.95
     - Vector1_9631c713374944f1baf4c3cdfd2383f2: 0
     - Vector1_bc92b98c079646cbb865d6e90b4a6695: 0
     - Vector1_c08ab4a83caa42759f4ee644717f3898: 0
     - Vector1_cc65e7fb5d3e424e9d494e6dc85bbe1b: 1
     - Vector1_cec3ea62b71c4cd89a9781c0e5893529: 0
-    - Vector1_d2040b37f4b647f69e4b4cefd3924402: 0
+    - Vector1_d2040b37f4b647f69e4b4cefd3924402: 0.85
     - Vector1_d2040b37f4b647f69e4b4cefd3924402_1: 0
-    - Vector1_fa1cbfcacbf2417480c966913c6b923d: 1
-    - Vector1_fa1cbfcacbf2417480c966913c6b923d_1: 0
+    - Vector1_fa1cbfcacbf2417480c966913c6b923d: 0.97
+    - Vector1_fa1cbfcacbf2417480c966913c6b923d_1: 0.27
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
