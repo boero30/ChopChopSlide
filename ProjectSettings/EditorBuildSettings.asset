@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 81046a6d768cec046a396c326cb45ebe
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/level1nosirve.unity
-    guid: 30a09c9a0663f35488317585807efd41
+    path: Assets/Scenes/level1.unity
+    guid: dc4c41b1e1a4b464b9199d82cecd7d64
   - enabled: 1
     path: Assets/Scenes/level2.unity
     guid: 8012b1eb42ba1df479c099cc02ff672d
@@ -45,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Scenes/lose.unity
     guid: 00196c6080c55c849b15976f8cfa4785
   - enabled: 1
-    path: Assets/Scenes/Win.unity
+    path: Assets/Scenes/Winavo.unity
     guid: 728245b10e66d3047a62c8a89a72e6b5
   - enabled: 1
     path: Assets/Scenes/DEATHS/AVOBOIL.unity
@@ -92,4 +95,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DEATHS/TOMATOFRY.unity
     guid: a4f84843fda863f4eab68611ada7546e
+  - enabled: 1
+    path: Assets/Scenes/Winegg.unity
+    guid: e84e6446c38ceea4f8c51388ddaa2086
+  - enabled: 1
+    path: Assets/Scenes/Winonion.unity
+    guid: db18271875a0c754d8c226506eaae5bf
+  - enabled: 1
+    path: Assets/Scenes/Wintomato.unity
+    guid: 6d87ada6ae53ad64bad1148099dffcac
   m_configObjects: {}

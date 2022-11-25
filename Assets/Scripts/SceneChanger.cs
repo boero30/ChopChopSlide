@@ -56,10 +56,6 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(11);
     }
-    public void Win()
-    {
-        SceneManager.LoadScene(12);
-    }
     public void avoboil()
     {
         SceneManager.LoadScene(13);
@@ -121,5 +117,22 @@ public class SceneChanger : MonoBehaviour
     public void tomatofry()
     {
         SceneManager.LoadScene(27);
+    }
+
+    public void winTomato()
+    {
+        SceneManager.LoadScene(30);
+    }
+    public void winOnion()
+    {
+        SceneManager.LoadScene(29);
+    }
+    public void winEgg()
+    {
+        SceneManager.LoadScene(28);
+    }
+    public void winAvo()
+    {
+        SceneManager.LoadScene(12);
     }
 }
