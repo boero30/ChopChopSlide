@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16524452, g: 0.11981392, b: 0.09111476, a: 1}
+  m_IndirectSpecularColor: {r: 0.16903305, g: 0.12655401, b: 0.10017687, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1980,6 +1980,11 @@ MonoBehaviour:
   powerBar: {fileID: 0}
   lose: 0
   score: 0
+  avo: 1
+  onion: 0
+  tomato: 0
+  egg: 0
+  carrot: 0
 --- !u!1 &293427634 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 78266e9ecbfb90044b3213d0f1df6511,
@@ -4456,7 +4461,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871444570}
-  m_LocalRotation: {x: 0.03798695, y: 0.8483778, z: -0.061451018, w: 0.5244386}
+  m_LocalRotation: {x: 0.03798695, y: 0.8483778, z: -0.061451025, w: 0.5244386}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6173,7 +6178,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160513095}
-  m_LocalRotation: {x: 0.053961035, y: 0.06901288, z: -0.0037384056, w: 0.99614835}
+  m_LocalRotation: {x: 0.053961035, y: 0.06901287, z: -0.0037384056, w: 0.9961483}
   m_LocalPosition: {x: 20.007965, y: 2.7120001, z: -16.39016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10599,7 +10604,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005379846}
-  m_LocalRotation: {x: 0.018911675, y: 0.8500502, z: -0.030593181, w: 0.52547234}
+  m_LocalRotation: {x: 0.018911676, y: 0.8500501, z: -0.030593185, w: 0.5254723}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

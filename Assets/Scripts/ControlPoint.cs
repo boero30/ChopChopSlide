@@ -31,6 +31,17 @@ public class Controlpoint : MonoBehaviour
     public bool lose = false;
 
     public float score;
+
+    public bool avo = false;
+
+    public bool onion = false;
+
+    public bool tomato = false;
+
+    public bool egg = false;
+
+    public bool carrot = false;
+
     public bool IsMoving()
     {
         return veg.velocity.magnitude > 1f;
@@ -41,11 +52,13 @@ public class Controlpoint : MonoBehaviour
         if (other.gameObject.tag == "jello")
         {
             Debug.Log("jellooo:))");
-        } if (other.gameObject.tag == "lose")
+        }
+        if (other.gameObject.tag == "lose")
         {
             lose = true;
             Debug.Log("lose");
-        } if (other.gameObject.tag == "block")
+        }
+        if (other.gameObject.tag == "block")
         {
             Debug.Log("block");
         }
@@ -55,7 +68,7 @@ public class Controlpoint : MonoBehaviour
     {
         jump = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
 
-        jumpdir = new Vector3(moveDirection.x, 0.5f, moveDirection.z );
+        jumpdir = new Vector3(moveDirection.x, 0.5f, moveDirection.z);
 
     }
 
@@ -85,11 +98,10 @@ public class Controlpoint : MonoBehaviour
         moveDirection = cameraTransform.forward;
 
         if (Input.GetButton("Shoot"))
-        {           
-            if(InTransit == false)
+        {
+            if (InTransit == false)
             {
                 StartCoroutine(Disparo());
-                Debug.Log("yaAlavergaaaa");
             }
         }
     }

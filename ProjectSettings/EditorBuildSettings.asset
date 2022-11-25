@@ -47,4 +47,49 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 728245b10e66d3047a62c8a89a72e6b5
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/AVOBOIL.unity
+    guid: 916bad2c76927754595365a27967f4e3
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/AVOCUT.unity
+    guid: f82ed47d1670e02418ee5b1be0286555
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/AVOFRY.unity
+    guid: 349e0afc125f44d44ad8b40d72c4f45c
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/CARROTBOIL.unity
+    guid: 607cef198ce808544bcc45d0448da904
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/CARROTFRY.unity
+    guid: c4be00bf8342c864181796041c2c933b
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/CARROTCUT.unity
+    guid: dd06233214b72534595b36505cd3adf9
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/EGGBOIL.unity
+    guid: c3578d43de0694c4c931131184761093
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/EGGCUT.unity
+    guid: e97b22ee7d3393648884c5d065857ab5
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/EGGFRY.unity
+    guid: c532ecef7bbb5dd4eb0066e373bc72b2
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/ONIONBOIL.unity
+    guid: 00b1a92a0e3e27c498ebac1735c67f7a
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/ONIONCUT.unity
+    guid: 97634503f887dca4d9f562e5bce82cca
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/ONIONFRY.unity
+    guid: 61c1acb896005e643adc69844629a641
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/TOMATOBOIL.unity
+    guid: f2692e3663a1e034195fcbdc19e2c8df
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/TOMATOCUT.unity
+    guid: 52449899404843040ab45a7741e3e66b
+  - enabled: 1
+    path: Assets/Scenes/DEATHS/TOMATOFRY.unity
+    guid: a4f84843fda863f4eab68611ada7546e
   m_configObjects: {}
