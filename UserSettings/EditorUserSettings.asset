@@ -6,21 +6,51 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 0500050201065c0b5d5c0e2414770f49434f49737a29276078704863e6b7643a
+<<<<<<< Updated upstream
+      value: 5301055f53565f0b555e0f77452007444f15497f757f7036752a1b32b6b76c6d
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 5405555353065c0a5d59087614740d4440151a7a7f2d76357b714a67b0e5366a
+      value: 010357025c0c5d5a5a5b5d7746770a44144e1c797e2c2235787a4b31b0e3653d
       flags: 0
     RecentlyUsedSceneGuid-2:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 5a020700530d0809540f5d7344215e44424e19797f2a74687f2f4932b4b1663c
+=======
+      value: 52540c0055045c08540a597615735b444f151c7e797f71622f711f37b5b06560
+>>>>>>> parent of d9064a2 (Update level1.unity)
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 500155565c56505a5d585a7116700a444e4f4b7b7b7d7e6575794a36e4e46069
+      value: 5b00045253545f5f5a58542115200f4440164b737a2b75627b2a1f67b7e5363d
       flags: 0
     RecentlyUsedSceneGuid-4:
+      value: 065251505d51585d0b5b5d7714250c444e4e4c7c752b73317d7f4e31e7b1316a
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 500155565c56505a5d585a7116700a444e4f4b7b7b7d7e6575794a36e4e46069
+=======
+      value: 010357025c0c5d5a5a5b5d7746770a44144e1c797e2c2235787a4b31b0e3653d
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 5b00045253545f5f5a58542115200f4440164b737a2b75627b2a1f67b7e5363d
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 0755015e51040d0a080b542014210c44444f4929297823632f2b4830b4b1373a
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 0654520553565c0f5e585a7b43700f444e15412b2a7e7f337b7f1f31e4b2303d
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 53000607530450095a08097a40745e4445154d7f797f2433757c4937b5e4646e
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5452525504010a08540f087545210f4441161d73797b73322f2a4d60e7b5356c
+>>>>>>> Stashed changes
+      flags: 0
+    RecentlyUsedSceneGuid-6:
       value: 5b01055407040c59595c0e2341275944414e1b7a757125337d7b1b35b4b7663c
       flags: 0
+<<<<<<< HEAD
 =======
       value: 5452525504010a08540f087545210f4441161d73797b73322f2a4d60e7b5356c
       flags: 0
@@ -55,6 +85,34 @@ EditorUserSettings:
       value: 18135939215a0a5004000b0e15254b524c1119263f2d6a722016393ce1eb3d36e5d339f9a5602b2e2c07a37e0901373ae01e0008f707250d171df81a53a5485d41895ac825e0100ec20313c0d91cddccd3d0c7efcca9bd80908fecb0f9cfddf1eff4e7a1b1eae482f0fcaee1e1928b86d888ed969b938795ea828182ec8182848985d4848e9ac5
       flags: 0
 >>>>>>> Stashed changes
+=======
+    RecentlyUsedSceneGuid-7:
+      value: 0500050201065c0b5d5c0e2414770f49434f49737a29276078704863e6b7643a
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+<<<<<<< Updated upstream
+      value: 5405555353065c0a5d59087614740d4440151a7a7f2d76357b714a67b0e5366a
+=======
+      value: 5750565556065f0b0f0b547342770844124f1a7c2e79236079704435e0e36139
+>>>>>>> Stashed changes
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5a020700530d0809540f5d7344215e44424e19797f2a74687f2f4932b4b1663c
+      flags: 0
+    UnityEditor.ShaderGraph.Blackboard:
+<<<<<<< Updated upstream
+      value: 18135939215a0a5004000b0e15254b524c030a3f2964643d120d1230e9e93a3fd6e826abbd3c3e302a07a37e0901373ae01e0008f707250d171df81a53a5405d419548954b9d4d49934e44979d4b83b69994d9d5f0e4f5d1c4d0aee6f5fcc1fef3e2a0efe8f2a48efae3bcbc90f1cedec488eddf8ede8b9de882819dee9f90ca9b8cd18689c988c6c4
+=======
+      value: 18135939215a0a5004000b0e15254b524c030a3f2964643d120d1230e9e93a3fd6e826abbd2e2d293c4ead313b08042de6030a0afa240c0d020be94c4baf5e435d8715fa32c70d15d11612dacc11fee5d3c5d1fe9ab1b0968786f9abada9bbaaa6a0f3a9f2fcae8ce8a2c182a6d8c2869bd1f5dc8e9c9b97ea9c819ffcca90898d86d598899ac5
+>>>>>>> Stashed changes
+      flags: 0
+    UnityEditor.ShaderGraph.FloatingWindowsLayout2:
+      value: 181344140043005e1a220d3b1f364b524c0c5a27130c293326201334cee5322ca0bd30e8eb293a707b0fd0180b3d0a36fc0d3d04e649500d1002ee0b5dbd1d2c27c00ad113cb1e10e41f1addc80993b98d9884a69ae6d8f0d1cda9e8fbfefaf9f9dea3fdb9ade882f0f7b0e1e380cafbf2c3adc18e9cd285a2908b82ec869c808a85d6818dd78a888ddef7d8eed2bee6c9f0f6c2dbf3cffdcbcbcae639e7fe3436313ba7a1a5
+      flags: 0
+    UnityEditor.ShaderGraph.InspectorWindow:
+      value: 18135939215a0a5004000b0e15254b524c1119263f2d6a722016393ce1eb3d36e5d339f9a5602b2e2c07a37e0901373ae01e0008f707250d171df81a53a5485d41895ac825e0100ec20313c0d91cddccd3d0c7efcca9bd80908ff0a2a4a3beada4a6f0acf2f9ae95e6edf38e9ccbddc18390ac86d4849394ea829f83ee8382808983d4818cd0808a95cfb9cff8c2f0f0ddf7f2c0c3fdcefbcccfcbe338e4f87d7b
+      flags: 0
+>>>>>>> parent of d9064a2 (Update level1.unity)
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
@@ -63,7 +121,7 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 4
+  m_DesiredImportWorkerCount: 3
   m_StandbyImportWorkerCount: 2
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
