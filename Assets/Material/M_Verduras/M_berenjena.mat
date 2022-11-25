@@ -227,8 +227,8 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Roughness_Max_Value: 1
-    - _Roughness_Min_Value: 1
+    - _Roughness_Max_Value: 0.44
+    - _Roughness_Min_Value: -0.04
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0

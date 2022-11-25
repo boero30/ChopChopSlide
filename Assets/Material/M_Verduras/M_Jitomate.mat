@@ -127,7 +127,7 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _OpacityDirt: 0
-    - _Opacity_Dirt: 0
+    - _Opacity_Dirt: 0.889
     - _OpaqueCullMode: 2
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -137,8 +137,8 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Roughness_Max_Value: 0.59
-    - _Roughness_Min_Value: 1
+    - _Roughness_Max_Value: 0.38
+    - _Roughness_Min_Value: 0.18
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
