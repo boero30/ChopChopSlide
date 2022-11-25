@@ -137,8 +137,8 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Roughness_Max_Value: 0.09
-    - _Roughness_Min_Value: -0.46
+    - _Roughness_Max_Value: 0.59
+    - _Roughness_Min_Value: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
