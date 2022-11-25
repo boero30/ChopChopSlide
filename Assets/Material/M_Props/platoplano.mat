@@ -63,7 +63,7 @@ Material:
     m_Floats:
     - Boolean_5c0e213cddb94e9280063113cfdf62dd: 0
     - Boolean_93b38fdf5dd34686980e7ca8311d7034: 0
-    - Boolean_cef2de69ecc543c997694789a165e96d: 0
+    - Boolean_cef2de69ecc543c997694789a165e96d: 1
     - Boolean_da7526205baf4355abbd1c1cd262a44f: 0
     - Boolean_e88cae22686740cbb870af996f753498: 0
     - Vector1_1: 1
@@ -71,11 +71,11 @@ Material:
     - Vector1_5a10342535474d539cb8ca90a93c3dae: 0
     - Vector1_86e844af569241b4b265c69ac47a53cc: 0
     - Vector1_92b82806a8024a48be3b1e33a30e328b: 2
-    - Vector1_9631c713374944f1baf4c3cdfd2383f2: 1
+    - Vector1_9631c713374944f1baf4c3cdfd2383f2: 0
     - Vector1_bc92b98c079646cbb865d6e90b4a6695: 0
     - Vector1_c08ab4a83caa42759f4ee644717f3898: 0
     - Vector1_cc65e7fb5d3e424e9d494e6dc85bbe1b: 1
-    - Vector1_cec3ea62b71c4cd89a9781c0e5893529: 0
+    - Vector1_cec3ea62b71c4cd89a9781c0e5893529: 1
     - Vector1_d2040b37f4b647f69e4b4cefd3924402: 0
     - Vector1_d2040b37f4b647f69e4b4cefd3924402_1: 0
     - Vector1_fa1cbfcacbf2417480c966913c6b923d: 1
